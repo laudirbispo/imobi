@@ -1,0 +1,36 @@
+<script type="text/javascript" src="Assets/Ajax/forms.js"></script>
+<script type="text/javascript">
+$('#upload-images').ajaxForm({
+    	uploadProgress: function(event, position, total, percentComplete) {
+        	$('progress').attr('value',percentComplete);
+        	$('#porcentagem').html(percentComplete+'%');
+    	},
+    	success: function(data) {
+        	$('progress').attr('value','100');
+		$('#porcentagem').html('100%');
+        	$('pre').html(data);
+        }	
+    	
+});
+</script>
+
+
+<fieldset id="upload-fieldset">
+    
+ <legend><p><i class="icon-hand-right vermelho"></i>Primeiramente faça o upload das imagens que você vai usar!</p> </legend>  
+     <form id="upload-images" enctype="multipart/form-data" action="modulos/noticias/functions/upload_images.php" method="post">
+          
+        <label>
+       <br>
+        <input name="fotos[]" max="5" type="file" multiple id="fotos" required accept="image/jpg, image/jpeg, image/png, image/bmp, image/gif">&nbsp;&nbsp;&nbsp;<a  href="" tooltip="Tamanho máximo 2mb. Extensões permitidas jpg, png, gif, bmp, jpeg." class="tooltip"><i class="icon-info t14"></i></a>
+        
+       <span id="barra-progress"><progress value="0" max="100"></progress><span id="porcentagem">0%</span></span>
+        </label><br>
+        <input name="file-upload" type="submit" value="UPLOAD">
+    </form>
+</fieldset>
+
+
+
+
+#barra-progress{display:none}progress::-webkit-progress-bar{background:#f5f5f5;padding:1px}progress::-moz-progress-bar{background:#f5f5f5;padding:1px}progress::-webkit-progress-value{background:#B72929;padding:1px}

@@ -1,0 +1,138 @@
+/*--------Standart bootstrap grid--------*/
+.row-fluid:before, .row-fluid:after {  content: " ";  display: table;}
+.row-fluid:after { clear: both;}
+
+.row-fluid.for-car [class*="span"]{
+    margin-left: 0.2564102564102564%;
+    *margin-left: 0.25109110747408616%;
+    float: left;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.row-fluid [class*="span"]:first-child, .row-fluid.for-car [class*="span"]:first-child  {
+    margin-left: 0;
+}
+
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span_by5 { width: 1.793789743589745%; *width: 1.748908892525914%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span12 { width: 10%; *width: 9.94680851063829%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span11 { width: 9.145299145299145%; *width: 9.139979996362975%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span10 { width: 8.290598290598291%; *width: 8.28527914166212%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span9 { width: 7.435897435897436%; *width: 7.430578286961266%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span8 { width: 6.581196581196582%; *width: 6.575877432260411%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span7 { width: 5.726495726495726%; *width: 5.721176577559556%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span6 { width: 4.8717948717948715%; *width: 4.8664757228587014%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span5 { width: 4.017094017094017%; *width: 4.011774868157847%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span4 { width: 3.1623931623931625%; *width: 3.1570740134569924%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span3 { width: 2.3076923076923077%; *width: 2.3023731587561375%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span2 { width: 1.452991452991453%; *width: 1.4476723040552828%;}
+.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span1 { width: 0.5982905982905983%; *width: 0.5929714493544281%;}
+
+/*------Carouseller--------*/
+.for-car { position: relative;}
+.for-car .carousel-items { position: relative; width: 997.4358974358974%;}
+.for-car .carousel-items > .carousel-block { transition: margin-left 0.05s ease-out;}
+.for-car .carousel-block { display: inline-block; position: relative; }
+.for-car .carousel-wrapper { overflow: hidden; position: relative;}
+.for-car .carousel-control-block { height:40px !important;}
+.for-car .carousel-control-block > .carousel-button-left, .for-car .carousel-control-block > .carousel-button-right { display: inline-block;}
+.for-car .carousel-control-block > .carousel-button-left > a, .for-car .carousel-control-block > .carousel-button-right > a { 
+    background: none repeat scroll 0 0 transparent;
+    font-size: 20px;
+    opacity: 0.5;
+
+	color: #000;
+	text-decoration: none;
+}
+.for-car .carousel-control-block > .carousel-button-left > a:hover, .for-car .carousel-control-block > .carousel-button-right > a:hover { opacity: 0.8; padding:0;}
+.carousel-block { max-height:400px !important; }
+
+
+
+/*------Responsive-----------*/
+/* Portrait tablet to landscape and desktop */
+@media only screen and  (min-width: 769px) and (max-width: 979px) { 
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span_by5,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span12,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span11,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span10,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span9,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span8,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span7,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span6,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span5,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span4,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span3,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span2,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span1 { width: 4.8717948717948715%; *width: 4.8664757228587014%;}
+}
+/* Landscape phone to portrait tablet */
+@media only screen and (max-width: 768px) and (max-device-width : 768px) {
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span_by5,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span12,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span11,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span10,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span9,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span8,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span7,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span6,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span5,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span4,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span3,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span2,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span1 { width: 10%; *width: 9.94680851063829%;}
+  .for-car .carousel-control-block {
+    height: 40px !important;
+    z-index: 999;
+}
+.for-car {
+    position: relative;
+    max-height: 400px !important;
+}
+.for-car .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    max-height: 380px !important;
+}
+for-car .carousel-items {
+    position: relative;
+    width: 997.4358974358974%;
+    max-height: 400px !important;
+}
+}
+/* Landscape phones and down */
+@media only screen and  (max-width: 480px) and (max-device-width: 480px){
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span_by5,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span12,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span11,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span10,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span9,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span8,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span7,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span6,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span5,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span4,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span3,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span2,
+	.row-fluid.for-car > .carousel-wrapper > .carousel-items > .span1 { width: 10%; *width: 9.94680851063829%;}
+  .for-car .carousel-control-block {
+    height: 40px !important;
+
+    
+}
+.for-car {
+    position: relative;
+    max-height: 400px !important;margin-bottom:50px;
+}
+.for-car .carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+    max-height: 380px !important;
+}
+for-car .carousel-items {
+    position: relative;
+    width: 997.4358974358974%;
+    max-height: 400px !important;
+}
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="Canvas.php" server="C:/wamp64/www/" local="131650698156415470" remote="131650698150000000" Dst="1" />
+<file name="Coordinate.php" server="C:/wamp64/www/" local="131650698157040915" remote="131650698150000000" Dst="1" />
+<file name="Exception.php" server="C:/wamp64/www/" local="131650698155822561" remote="131650698150000000" Dst="1" />
+<file name="Image.php" server="C:/wamp64/www/" local="131650698157156000" remote="131650698150000000" Dst="1" />
+<file name="MapperFactory.php" server="C:/wamp64/www/" local="131650698156650665" remote="131650698150000000" Dst="1" />
+<file name="OperationFactory.php" server="C:/wamp64/www/" local="131650698156895820" remote="131650698150000000" Dst="1" />
+<file name="PaletteImage.php" server="C:/wamp64/www/" local="131650698155917636" remote="131650698150000000" Dst="1" />
+<file name="TrueColorImage.php" server="C:/wamp64/www/" local="131650698156185317" remote="131650698150000000" Dst="1" />
+<file name="WideImage.php" server="C:/wamp64/www/" local="131650698157471223" remote="131650698150000000" Dst="1" />
+</dwsync>

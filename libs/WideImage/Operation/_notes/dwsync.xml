@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AddNoise.php" server="C:/wamp64/www/" local="131650698159737159" remote="131650698150000000" Dst="1" />
+<file name="ApplyConvolution.php" server="C:/wamp64/www/" local="131650698160287544" remote="131650698160000000" Dst="1" />
+<file name="ApplyFilter.php" server="C:/wamp64/www/" local="131650698162542666" remote="131650698160000000" Dst="1" />
+<file name="ApplyMask.php" server="C:/wamp64/www/" local="131650698159552052" remote="131650698150000000" Dst="1" />
+<file name="AsGrayscale.php" server="C:/wamp64/www/" local="131650698161969201" remote="131650698160000000" Dst="1" />
+<file name="AsNegative.php" server="C:/wamp64/www/" local="131650698159386929" remote="131650698150000000" Dst="1" />
+<file name="AutoCrop.php" server="C:/wamp64/www/" local="131650698160663269" remote="131650698160000000" Dst="1" />
+<file name="CopyChannelsPalette.php" server="C:/wamp64/www/" local="131650698163373250" remote="131650698160000000" Dst="1" />
+<file name="CopyChannelsTrueColor.php" server="C:/wamp64/www/" local="131650698161298723" remote="131650698160000000" Dst="1" />
+<file name="CorrectGamma.php" server="C:/wamp64/www/" local="131650698160002344" remote="131650698160000000" Dst="1" />
+<file name="Crop.php" server="C:/wamp64/www/" local="131650698161088576" remote="131650698160000000" Dst="1" />
+<file name="Flip.php" server="C:/wamp64/www/" local="131650698162882928" remote="131650698160000000" Dst="1" />
+<file name="GetMask.php" server="C:/wamp64/www/" local="131650698161784069" remote="131650698160000000" Dst="1" />
+<file name="Merge.php" server="C:/wamp64/www/" local="131650698163228162" remote="131650698160000000" Dst="1" />
+<file name="Mirror.php" server="C:/wamp64/www/" local="131650698163653473" remote="131650698160000000" Dst="1" />
+<file name="Resize.php" server="C:/wamp64/www/" local="131650698160462675" remote="131650698160000000" Dst="1" />
+<file name="ResizeCanvas.php" server="C:/wamp64/www/" local="131650698160878429" remote="131650698160000000" Dst="1" />
+<file name="Rotate.php" server="C:/wamp64/www/" local="131650698162697784" remote="131650698160000000" Dst="1" />
+<file name="RoundCorners.php" server="C:/wamp64/www/" local="131650698163043022" remote="131650698160000000" Dst="1" />
+<file name="Unsharp.php" server="C:/wamp64/www/" local="131650698163483338" remote="131650698160000000" Dst="1" />
+</dwsync>

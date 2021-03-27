@@ -1,0 +1,12 @@
+<!-- LIGHTBOX-->
+<link href="css/lightbox.css" rel="stylesheet" />
+
+<!-- LIGHTBOX-->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+
+============================================================
+
+<!-- HTML LIGHTBOX-->
+
+<a href="images/categoria1.jpg" data-lightbox="roadtrip" data-title="Aqui vai uma legenda"><IMG SRC="img/link.png"></a>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="code_generator.phps" server="C:/wamp64/www/" local="131650699110553554" remote="131650699110000000" Dst="1" />
+<file name="contactform.phps" server="C:/wamp64/www/" local="131650699111713717" remote="131650699110000000" Dst="1" />
+<file name="contents.html" server="C:/wamp64/www/" local="131650699114051565" remote="131650699110000000" Dst="1" />
+<file name="contentsutf8.html" server="C:/wamp64/www/" local="131650699108986711" remote="131650699100000000" Dst="1" />
+<file name="DKIM.phps" server="C:/wamp64/www/" local="131650699113901522" remote="131650699110000000" Dst="1" />
+<file name="exceptions.phps" server="C:/wamp64/www/" local="131650699111853812" remote="131650699110000000" Dst="1" />
+<file name="gmail.phps" server="C:/wamp64/www/" local="131650699110328073" remote="131650699110000000" Dst="1" />
+<file name="gmail_xoauth.phps" server="C:/wamp64/www/" local="131650699111883832" remote="131650699110000000" Dst="1" />
+<file name="index.html" server="C:/wamp64/www/" local="131650699114161641" remote="131650699110000000" Dst="1" />
+<file name="mail.phps" server="C:/wamp64/www/" local="131650699111873831" remote="131650699110000000" Dst="1" />
+<file name="mailing_list.phps" server="C:/wamp64/www/" local="131650699111843803" remote="131650699110000000" Dst="1" />
+<file name="pop_before_smtp.phps" server="C:/wamp64/www/" local="131650699112744438" remote="131650699110000000" Dst="1" />
+<file name="sendmail.phps" server="C:/wamp64/www/" local="131650699114011533" remote="131650699110000000" Dst="1" />
+<file name="send_file_upload.phps" server="C:/wamp64/www/" local="131650699113019826" remote="131650699110000000" Dst="1" />
+<file name="send_multiple_file_upload.phps" server="C:/wamp64/www/" local="131650699111188979" remote="131650699110000000" Dst="1" />
+<file name="signed-mail.phps" server="C:/wamp64/www/" local="131650699111863838" remote="131650699110000000" Dst="1" />
+<file name="smtp.phps" server="C:/wamp64/www/" local="131650699109992738" remote="131650699100000000" Dst="1" />
+<file name="smtp_check.phps" server="C:/wamp64/www/" local="131650699113119884" remote="131650699110000000" Dst="1" />
+<file name="smtp_no_auth.phps" server="C:/wamp64/www/" local="131650699110032778" remote="131650699110000000" Dst="1" />
+<file name="ssl_options.phps" server="C:/wamp64/www/" local="131650699114206674" remote="131650699110000000" Dst="1" />
+</dwsync>

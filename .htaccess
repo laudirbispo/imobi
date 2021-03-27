@@ -1,0 +1,274 @@
+#<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+#SetHandler application/x-lsphp56
+#</FilesMatch>
+
+DirectoryIndex index.php index.html index.htm
+
+<IfModule mod_rewrite.c>
+
+  <IfModule mod_negotiation.c>
+      Options -MultiViews
+  </IfModule>
+  
+RewriteEngine On
+#RewriteBase /
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(/)?$ index.php [L,QSA]
+RewriteRule ^/?$ index.php [NC,L]
+RewriteRule ^home/?$ index.php [NC,L]
+RewriteRule ^sobre/?$ sobre.php [NC,L]
+
+RewriteRule ^imoveis/?$ properties.php [NC,L]
+RewriteRule ^anuncie/?$ anuncie.php [NC,L]
+RewriteRule ^contato/?$ contato.php [NC,L]
+RewriteRule ^construtora/?$ construtora.php [NC,L]
+RewriteRule ^view_properties/?$ view_properties.php [NC,L]
+RewriteRule ^view_properties/([\=.a-z,0-9,A-Z,_-]+)$ view_properties.php?id=$1 [NC,L]
+	
+# Start Bad Bot Prvention
+RewriteCond %{HTTP_USER_AGENT} ^BackWeb [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bandit [OR]
+RewriteCond %{HTTP_USER_AGENT} ^BatchFTP [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Buddy [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Collector [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Copier [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Download\Wonder [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Downloader [OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkWalker [OR]
+RewriteCond %{HTTP_USER_AGENT} ^BlackWidow [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bot\ mailto:craftbot@yahoo.com [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Custo [OR]
+RewriteCond %{HTTP_USER_AGENT} ^DISCo [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Download\ Demon [OR]
+RewriteCond %{HTTP_USER_AGENT} ^eCatch [OR]
+RewriteCond %{HTTP_USER_AGENT} ^EirGrabber [OR]
+RewriteCond %{HTTP_USER_AGENT} ^EmailSiphon [OR]
+RewriteCond %{HTTP_USER_AGENT} ^EmailWolf [OR]
+RewriteCond %{HTTP_USER_AGENT} ^EmailCollector [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Crescent [OR]
+RewriteCond %{HTTP_USER_AGENT} ^CherryPicker [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Express\ WebPictures [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ExtractorPro [OR]
+RewriteCond %{HTTP_USER_AGENT} ^EyeNetIE [OR]
+RewriteCond %{HTTP_USER_AGENT} ^FlashGet [OR]
+RewriteCond %{HTTP_USER_AGENT} ^GetRight [OR]
+RewriteCond %{HTTP_USER_AGENT} ^GetWeb! [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Go!Zilla [OR]
+RewriteCond %{HTTP_USER_AGENT} ^gotit [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Go-Ahead-Got-It [OR]
+RewriteCond %{HTTP_USER_AGENT} ^GrabNet [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Grafula [OR]
+RewriteCond %{HTTP_USER_AGENT} ^HMView [OR]
+RewriteCond %{HTTP_USER_AGENT} HTTrack [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Stripper [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Image\ Sucker [OR]
+RewriteCond %{HTTP_USER_AGENT} Indy\ Library [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^InterGET [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Internet\ Ninja [OR]
+RewriteCond %{HTTP_USER_AGENT} ^JetCar [OR]
+RewriteCond %{HTTP_USER_AGENT} ^JOC\ Web\ Spider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^larbin [OR]
+RewriteCond %{HTTP_USER_AGENT} ^libghttp [OR]
+RewriteCond %{HTTP_USER_AGENT} ^LeechFTP [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mass\ Downloader [OR]
+RewriteCond %{HTTP_USER_AGENT} ^MIDown\ tool [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mister\ PiX [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Navroad [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NearSite [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetAnts [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetSpider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Net\ Vampire [OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetZIP [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Octopus [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Explorer [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Offline\ Navigator [OR]
+RewriteCond %{HTTP_USER_AGENT} ^PageGrabber [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Papa\ Foto [OR]
+RewriteCond %{HTTP_USER_AGENT} ^pavuk [OR]
+RewriteCond %{HTTP_USER_AGENT} ^pcBrowser [OR]
+RewriteCond %{HTTP_USER_AGENT} libwww-perl.* [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pockey [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pump [OR]
+RewriteCond %{HTTP_USER_AGENT} ^RealDownload [OR]
+RewriteCond %{HTTP_USER_AGENT} ^ReGet [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SiteSnagger [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SmartDownload [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SuperBot [OR]
+RewriteCond %{HTTP_USER_AGENT} ^SuperHTTP [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Surfbot [OR]
+RewriteCond %{HTTP_USER_AGENT} ^tAkeOut [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Teleport\ Pro [OR]
+RewriteCond %{HTTP_USER_AGENT} ^DtoidEYE [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Image\ Collector [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\ Sucker [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebAuto [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebFetch [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebGo\ IS [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebLeacher [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebReaper [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebSauger [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Website\ eXtractor [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Website\ Quester [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebStripper [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebWhacker [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebZIP [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Wget [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Widow [OR]
+RewriteCond %{HTTP_USER_AGENT} ^WWWOFFLE [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+RewriteRule ^.* - [F,L]
+# End Bad Bot Prevention
+</IfModule>
+
+ErrorDocument 400 /error/http/400
+ErrorDocument 401 /error/http/401
+ErrorDocument 402 /error/http/402
+ErrorDocument 403 /error/http/403
+ErrorDocument 404 /error/http/404
+ErrorDocument 405 /error/http/405
+ErrorDocument 500 /error/http/500
+ErrorDocument 501 /error/http/501
+ErrorDocument 502 /error/http/502
+ErrorDocument 504 /error/http/504
+ErrorDocument 505 /error/http/505
+
+# Remove Apache version
+#ServerTokens Prod
+# Remove the version number and installed module versions in the list at the bottom error pages (404, 403, ...)
+ServerSignature Off
+
+# Deny access to all CGI, Perl, Python, Bash, SQL, Template, INI configuration, cache, log, temporary and text files
+<FilesMatch "\.(cgi|pl|py|sh|bash|sql|tpl|ini|cache|log|tmp|txt)">
+    Deny from all
+</FilesMatch>
+
+# Leave open the humans.txt and robots.txt file
+<FilesMatch "humans\.txt|robots\.txt">
+    Allow from all
+</FilesMatch>
+
+# Prevent downloading files .htaccess (Default configuration of Apache)
+<Files ~ "^\.ht">
+    Order allow,deny
+    Deny from all
+    Satisfy all
+</Files>
+
+<Limit GET POST PUT DELETE HEAD>
+    Order allow,deny
+    Allow from all
+    Deny from env=bad_bot
+</Limit>
+
+#Força a utilizar Cache-Control e Expires header
+<IfModule mod_headers.c>
+  Header unset ETag
+</IfModule>
+FileETag None
+<IfModule mod_expires.c>
+ ExpiresActive on
+ ExpiresDefault "access plus 1 month"
+ ExpiresByType text/cache-manifest "access plus 0 seconds"
+ # Html
+ ExpiresByType text/html "access plus 0 seconds"
+ # Data
+ ExpiresByType text/xml "access plus 0 seconds"
+ ExpiresByType application/xml "access plus 0 seconds"
+ ExpiresByType application/json "access plus 0 seconds"
+ # Feed
+ ExpiresByType application/rss+xml "access plus 1 hour"
+ ExpiresByType application/atom+xml "access plus 1 hour"
+ # Favicon
+ ExpiresByType image/x-icon "access plus 1 week"
+ # Media: images, video, audio
+ ExpiresByType image/gif "access plus 1 month"
+ ExpiresByType image/png "access plus 1 month"
+ ExpiresByType image/jpg "access plus 1 month"
+ ExpiresByType image/jpeg "access plus 1 month"
+ ExpiresByType video/ogg "access plus 1 month"
+ ExpiresByType audio/ogg "access plus 1 month"
+ ExpiresByType video/mp4 "access plus 1 month"
+ ExpiresByType video/webm "access plus 1 month"
+ # HTC files
+ ExpiresByType text/x-component "access plus 1 month"
+ # Webfonts
+ ExpiresByType application/x-font-ttf "access plus 1 month"
+ ExpiresByType font/opentype "access plus 1 month"
+ ExpiresByType application/x-font-woff "access plus 1 month"
+ ExpiresByType image/svg+xml "access plus 1 month"
+ ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ # CSS / JS
+ ExpiresByType text/css "access plus 1 year"
+ ExpiresByType application/javascript "access plus 1 year"
+ ExpiresByType application/x-javascript  "access plus 1 year"
+</IfModule>
+
+#Força o IE a sempre carregar utilizando a última versão disponível
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=Edge,chrome=1"
+    <FilesMatch "\.(js|css|gif|png|jpeg|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|oex|xpi|safariextz|vcf)$" >
+    Header unset X-UA-Compatible
+    </FilesMatch>
+    <filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+    Header set Cache-Control "max-age=2592000, public"
+    </filesMatch>
+</IfModule>
+
+<FilesMatch ".(htm|html|css|js)$">
+AddDefaultCharset UTF-8
+</FilesMatch>
+
+<IfModule mod_deflate.c>
+ <IfModule mod_setenvif.c>
+ <IfModule mod_headers.c>
+ SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+ RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+ </IfModule>
+ </IfModule>
+ <IfModule filter_module>
+ FilterDeclare COMPRESS
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $text/html
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $text/css
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $text/plain
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $text/xml
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $text/x-component
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/javascript
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/json
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/xml
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/xhtml+xml
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/rss+xml
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/atom+xml
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/vnd.ms-fontobject
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $image/svg+xml
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $image/x-icon
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $application/x-font-ttf
+ FilterProvider COMPRESS DEFLATE resp=Content-Type $font/opentype
+ FilterChain COMPRESS
+ FilterProtocol COMPRESS DEFLATE change=yes;byteranges=no
+ </IfModule>
+ <IfModule !mod_filter.c>
+ AddOutputFilterByType DEFLATE text/html text/plain text/css application/json
+ AddOutputFilterByType DEFLATE application/javascript
+ AddOutputFilterByType DEFLATE text/xml application/xml text/x-component
+ AddOutputFilterByType DEFLATE application/xhtml+xml application/rss+xml application/atom+xml
+ AddOutputFilterByType DEFLATE image/x-icon image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+ </IfModule>
+</IfModule>
+
+# Gzip Compress 
+<ifmodule mod_gzip.c="">
+mod_gzip_on       Yes
+mod_gzip_dechunk  Yes
+mod_gzip_item_include file      \.(html?|css|js|php|pl)$
+mod_gzip_item_include handler   ^cgi-script$
+mod_gzip_item_include mime      ^text/.*
+mod_gzip_item_include mime      ^application/x-javascript.*
+mod_gzip_item_exclude mime      ^image/.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</ifmodule>
