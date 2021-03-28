@@ -31,12 +31,8 @@ Sobre a instalação e requerimentos:
 Sobre alterações e instalação:
 * É necessário contratar alguém com conhecimento básico para alterações. 
 
-Não possui mensalidade, mas caso preferir podemos hospedar em nossos servidores. Usamos a Hostinger, uma das melhores se não a melhor hospedagem.
-
-São inúmeros benefícios do sistema, tenho centenas de clientes usando.
-
 Sobre a licença:
-* A licença é exclusiva para uso próprio. Não pode ser revendida, cedida ou afins.
+* A licença é exclusiva para uso próprio e estudos. Não pode ser vendida, revendida, cedida ou afins.
 
 Atualizações:
 * Este produto não passa por atualizações
