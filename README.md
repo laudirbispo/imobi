@@ -1,7 +1,6 @@
 # imobi
 Site + sistema para imobiliária. Simples e fácil de usar. Ideal para pequenas imobiliárias e corretores.
 
-
 Características Painel Administrativo:
 
 * Painel de fácil administração;
@@ -40,3 +39,9 @@ Atualizações:
 .:: ATENÇÃO::.
 Para o mapa do Google funcionar precisa criar uma chave que é gerada dentro da sua conta do Google em Google console ou Google developer para que adicione a chave ligado ao domínio onde o site vai funcionar e carregar o mapa.
 
+SEJA UMA PESSOAL LEGAL, MANTENHA OS DIREITOS AUTORAIS.
+
+Contato: 
+Laudir Bispo <laudirbispo@outlook.com>
+WhatsApp: +55 (46) 9 9133-3618
+Instagram: @laudirbispo
