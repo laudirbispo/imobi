@@ -1,4 +1,4 @@
-# imobi
+# Full PHP Real State Website and Web APP
 Site + sistema para imobiliária. Simples e fácil de usar. Ideal para pequenas imobiliárias e corretores.
 
 ## Install
