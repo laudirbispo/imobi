@@ -1,6 +1,8 @@
 # imobi
 Site + sistema para imobiliária. Simples e fácil de usar. Ideal para pequenas imobiliárias e corretores.
 
+Install composer require laudirbispo/imobi
+
 Características Painel Administrativo:
 
 * Painel de fácil administração;
